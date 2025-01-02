@@ -8,3 +8,6 @@ This public release is a newer version of that original idea that I used in prac
 To keep it format agnostic the tool expects cleaned plain text files each containing one work, (or chapter if you wish to try this chapter based) it will then create a new folder with the prompts. I also bundled seperate files to allow converting these into ShareGPT and other formats.
 
 This tool should be used with KoboldCpp (or compatible software) and was tested on Llama3.1-8B-Instruct
+
+# License
+No formal fancy license, feel free to use it for whatever you waant but if you make a tool based on this method or use it to produce your dataset please credit my work.
