@@ -176,9 +176,10 @@ for book_filename in os.listdir("books"):
 
         prompt = get_book_summary(
             f"<|start_header_id|>user<|end_header_id|>\n\n"
-            f"{book}"
-            f"\n\n---"
-            f"\n\nGive me the TLDR of the above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+            f"{book}\n\n"
+            f"---\n\n"
+            f"Give me the TLDR of the above.<|eot_id|>"
+            f"<|start_header_id|>assistant<|end_header_id|>\n\n"
         )
         response = requests.post(f"{ENDPOINT}/v1/generate", json=prompt)
         if response.status_code == 200:
